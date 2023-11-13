@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About Us | BILMUN</title>
+		<link rel="stylesheet" href="output.css" />
+		<link rel="shortcut icon" href="images/logo_white.png" type="image/x-icon" />
+	</head>
+	<body class="bg-main-300">
+		<header class="flex justify-between h-24 items-center lg:px-20 bg-white text-main-white">
+			<a href="index.html"><img src="images/logo_white.png" class="w-24" /></a>
+			<div class="lg:flex text-main-300 gap-4 hidden">
+				<a href="index.html">Homepage</a>
+				<a href="aboutUs.html">About Us</a>
+				<a href="ourTeam.html">Our Team</a>
+				<a href="committiees.html">Committees</a>
+				<a href="schedule.html">Schedule</a>
+				<a href="contact.html">Contact</a>
+				<a href="faq.html">FAQ</a>
+				<a href="apply.html">Apply Now</a>
+			</div>
+			<div id="mobile_navbar" class="fixed top-24 left-0 w-screen z-50 hidden">
+				<div class="flex flex-col bg-white">
+					<a class="border-t-[1px] text-main-300 border-t-main-300 p-4" href="index.html"><div>Homepage</div></a>
+					<a class="border-t-[1px] text-main-300 border-t-main-300 p-4 justify-center" href="aboutUs.html">About Us</a>
+					<a class="border-t-[1px] text-main-300 border-t-main-300 p-4 justify-center" href="ourTeam.html">Our Team</a>
+					<a class="border-t-[1px] text-main-300 border-t-main-300 p-4 justify-center" href="committiees.html">Committees</a>
+					<a class="border-t-[1px] text-main-300 border-t-main-300 p-4 justify-center" href="schedule.html">Schedule</a>
+					<a class="border-t-[1px] text-main-300 border-t-main-300 p-4 justify-center" href="contact.html">Contact</a>
+					<a class="border-t-[1px] text-main-300 border-t-main-300 p-4 justify-center" href="faq.html">FAQ</a>
+					<a class="border-t-[1px] text-main-300 border-t-main-300 p-4 justify-center" href="apply.html">Apply Now</a>
+				</div>
+			</div>
+			<svg class="fill-main-300 lg:hidden mr-8" height="32px" id="navbar_button" style="enable-background: new 0 0 32 32" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+			</svg>
+		</header>
+
+		<script>
+			const mobileNavbar = document.getElementById("mobile_navbar");
+			const navbarButton = document.getElementById("navbar_button");
+
+			navbarButton.addEventListener("click", () => {
+				if (mobileNavbar.classList.contains("hidden")) {
+					mobileNavbar.classList.remove("hidden");
+				} else {
+					mobileNavbar.classList.add("hidden");
+				}
+			});
+		</script>
+
+		<main class="bg-main-300 p-4 sm:p-20 w-full">
+			<div class="bg-white px-6 py-8 lg:px-52 lg:py-20 text-main-white flex flex-col gap-7 leading-7">
+				<div class="text-[32px] sm:text-[40px] text-main-300 font-light">Vision & Mission</div>
+				<div class="text-sm font-bold text-main-300">Vision</div>
+				<div class="italic text-[15px] text-main-300 font-light">
+					Now is the moment for fresh ideas and analytical thinking skills to develop solutions to universal challenges. Our world, which is always growing and changing at an unpredictable rate, has brought with it unavoidable issues as a result of this expansion and development. The challenges caused by this rapid growth have disproportionately impacted Generation Z. ones who are most affected by problems are always ones who seek solutions. And we can find these solutions by thinking
+					creatively, peacefully, and analytically. As BILMUN'24, we are back to discuss potential solutions to existing challenges!
+				</div>
+				<div class="text-sm font-bold text-main-300">Mission</div>
+				<div class="italic text-[15px] text-main-300 font-light">Our objective as BILMUN'24 is to create a conference that is peaceful, competitive, innovative, sustainable, and solution-oriented. We believe that by publishing these articles, we will help our participants improve their educational, social, and analytical skills. Our primary responsibility is to encourage new and innovative ideas. A few expected elements will assist us in carrying out our task. These are the following:</div>
+				<div class="text-sm font-bold text-main-300">A COMPETITIVE BUT PEACEFUL DISCUSSION ENVIRONMENT:</div>
+				<div class="italic text-[15px] text-main-300 font-light">
+					Since we will be welcoming our participants in a diplomatic environment, the discussion will be passionate. There may be some disagreement during this conversation due to variables such as the perspectives of the countries (or people) represented by our participants, their political stances, and similar factors. One of our primary responsibilities as the BILMUN'24 team is to transform all debates into a solution-oriented discussion atmosphere. As previously said, the goal of this
+					healthy dialogue is to develop our members ' academic and social skills.
+				</div>
+				<div class="text-sm font-bold text-main-300">WE TRUST YOUTH AND THEIR FRESH IDEAS !</div>
+				<div class="italic text-[15px] text-main-300 font-light">
+					It is extremely clear what kinds of issues our participants come from and represent. Pandemics, economic downturns, minor military confrontations, and diplomatic crises are all possibilities. Despite their youth, they have a lot of political conclusions because of the current state of world politics. And these concepts are both novel and pleasant. We aim to listen to our young people ' s ideas, formulate the solutions and policies they will implement, and improve their social skills.
+					Why shouldn 't a new leader arise from among our ranks?
+				</div>
+				<div class="text-sm font-bold text-main-300">CREATING AN UNFORGETTABLE EXPERIENCE AND UNFORGATTABLE FRIENDSHIP</div>
+				<div class="italic text-[15px] text-main-300 font-light">Since communication is the basis of our conference, our participants have to remain in touch with each other. During their three days together, they will develop great friendships, build a wonderful network, and have an unforgettable experience.</div>
+				<div class="text-sm font-bold text-main-300">BY SHARING YOUNG MINDS , WE MAY BRING ATTENTION TO WORLDWIDE PROBLEMS AND FOSTER A BROADER MENTALITY !</div>
+				<div class="italic text-[15px] text-main-300 font-light">As previously stated, the majority of our participants are young people from Generation Z. We can be informed about the majority of global crises thanks to technology, and given that we live in the age of technology, Generation Z has a high level of knowledge about the crises that have occurred. Our objective is to assist them in developing a larger mentality by sharing the knowledge they have with others.</div>
+				<div class="text-sm font-bold text-main-300">
+					Our most essential responsibility is to ensure that all of our participants enjoy a positive conference experience. The procedures that need to be followed during the conference are identical to those used by the United Nations. Our participants will have an almost life-like experience and will strengthen their political and diplomatic thinking skills as a result of these procedures. We hope to improve our participants' academic lives, social skills, thoughts, and foreign languages. We
+					as BILMUN'24 are ready and waiting for you!
+				</div>
+			</div>
+		</main>
+
+		<footer class="w-full h-[200px] bg-main-300 flex flex-col justify-center items-center gap-3">
+			<div class="text-white text-2xl">BILMUN</div>
+			<div class="text-white text-sm pt-3 italic">Powered By Emre Özkaplan</div>
+			<a href="mailto:bilmun2024@gmail.com" class="text-white text-sm">bilmun2024@gmail.com</a>
+		</footer>
+	</body>
+</html>

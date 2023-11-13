@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact | BILMUN</title>
+		<link rel="stylesheet" href="output.css" />
+		<link rel="shortcut icon" href="images/logo_white.png" type="image/x-icon" />
+	</head>
+
+	<body class="bg-main-300">
+		<header class="flex justify-between h-24 items-center lg:px-20 bg-white text-main-300">
+			<a href="index.html"><img src="images/logo_white.png" class="w-24" /></a>
+			<div class="lg:flex gap-4 hidden">
+				<a href="index.html">Homepage</a>
+				<a href="aboutUs.html">About Us</a>
+				<a href="ourTeam.html">Our Team</a>
+				<a href="committiees.html">Committees</a>
+				<a href="schedule.html">Schedule</a>
+				<a href="contact.html">Contact</a>
+				<a href="faq.html">FAQ</a>
+				<a href="apply.html">Apply Now</a>
+			</div>
+			<div id="mobile_navbar" class="fixed top-24 left-0 w-screen z-50 hidden">
+				<div class="flex flex-col bg-white">
+					<a class="border-t-[1px] border-t-main-300 p-4" href="index.html"><div>Homepage</div></a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="aboutUs.html">About Us</a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="ourTeam.html">Our Team</a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="committiees.html">Committees</a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="schedule.html">Schedule</a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="contact.html">Contact</a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="faq.html">FAQ</a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="apply.html">Apply Now</a>
+				</div>
+			</div>
+			<svg class="fill-main-300 lg:hidden mr-8" height="32px" id="navbar_button" style="enable-background: new 0 0 32 32" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+			</svg>
+		</header>
+
+		<script>
+			const mobileNavbar = document.getElementById("mobile_navbar");
+			const navbarButton = document.getElementById("navbar_button");
+
+			navbarButton.addEventListener("click", () => {
+				if (mobileNavbar.classList.contains("hidden")) {
+					mobileNavbar.classList.remove("hidden");
+				} else {
+					mobileNavbar.classList.add("hidden");
+				}
+			});
+		</script>
+
+		<!-- <main class="bg-main-300 p-4 md:p-10 lg:p-20"> -->
+		<main class="px-8 lg:px-40 w-full lg:pb-20 flex justify-center mt-20">
+			<div class="text-2xl text-white">TBA</div>
+		</main>
+		<!-- </main> -->
+
+		<footer class="w-full h-[200px] bg-main-300 flex flex-col justify-center items-center gap-3">
+			<div class="text-white text-2xl">BILMUN</div>
+			<div class="text-white text-sm pt-3 italic">Powered By Emre Özkaplan</div>
+			<a href="mailto:bilmun2024@gmail.com" class="text-white text-sm">bilmun2024@gmail.com</a>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BILMUN</title>
+		<link rel="stylesheet" href="output.css" />
+		<link rel="shortcut icon" href="images/logo_white.png" type="image/x-icon" />
+	</head>
+	<body class="min-h-screen">
+		<header class="flex justify-between h-24 items-center lg:px-20 bg-white text-main-300">
+			<a href="index.html"><img src="images/logo_white.png" class="w-24" /></a>
+			<div class="lg:flex gap-4 hidden">
+				<a href="index.html">Homepage</a>
+				<a href="aboutUs.html">About Us</a>
+				<a href="ourTeam.html">Our Team</a>
+				<a href="committiees.html">Committees</a>
+				<a href="schedule.html">Schedule</a>
+				<a href="contact.html">Contact</a>
+				<a href="faq.html">FAQ</a>
+				<a href="apply.html">Apply Now</a>
+			</div>
+			<div id="mobile_navbar" class="fixed top-24 left-0 w-screen z-50 hidden">
+				<div class="flex flex-col bg-white">
+					<a class="border-t-[1px] border-t-main-300 p-4" href="index.html"><div>Homepage</div></a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="aboutUs.html">About Us</a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="ourTeam.html">Our Team</a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="committiees.html">Committees</a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="schedule.html">Schedule</a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="contact.html">Contact</a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="faq.html">FAQ</a>
+					<a class="border-t-[1px] border-t-main-300 p-4 justify-center" href="apply.html">Apply Now</a>
+				</div>
+			</div>
+			<svg class="fill-main-300 lg:hidden mr-8" height="32px" id="navbar_button" style="enable-background: new 0 0 32 32" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+			</svg>
+		</header>
+
+		<script>
+			const mobileNavbar = document.getElementById("mobile_navbar");
+			const navbarButton = document.getElementById("navbar_button");
+
+			navbarButton.addEventListener("click", () => {
+				if (mobileNavbar.classList.contains("hidden")) {
+					mobileNavbar.classList.remove("hidden");
+				} else {
+					mobileNavbar.classList.add("hidden");
+				}
+			});
+
+			// Geri sayım tarihini belirleyin
+			var countdownDate = new Date("February 9, 2024 00:00:00").getTime();
+			// Her saniyede bir geri sayımı güncelleyin
+			var countdownFunction = setInterval(function () {
+				// Şu anki tarih ve saat bilgisini alın
+				var now = new Date().getTime();
+
+				// Geri sayım tarihine kalan zamanı hesaplayın
+				var distance = countdownDate - now;
+
+				// Gün, saat, dakika ve saniye hesaplamaları
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				// HTML elementlerini güncelleyin
+				document.getElementById("days").innerHTML = days;
+				document.getElementById("hours").innerHTML = hours;
+				document.getElementById("minutes").innerHTML = minutes;
+				if (distance < 0) {
+					document.getElementById("counter").classList.add("hidden");
+				}
+			}, 1000);
+		</script>
+
+		<main class="p-8 lg:grid lg:grid-cols-2 md:row-start-2 bg-main-300 w-full flex flex-col gap-20 lg:p-20 lg:gap-20">
+			<div>
+				<img class="w-full" src="images/logo_white.png" />
+			</div>
+			<div class="mt-6 md:mt-0 md:col-start-2 md:col-span-1 row-start-1 row-span-1 flex flex-col items-center justify-center gap-3">
+				<div class="font-bold text-white text-xl">Letter from Secretary-General</div>
+				<div class="text-white italic leading-7 2xl:leading-10 text-base 2xl:text-lg font-light">
+					<div class="text-center">Dear Participants,</div>
+					<div class="text-center">
+						As the Secretary General of the first Bilnet Schools Model United Nations, it is my great pleasure to welcome you all to our conference. As the BILMUN team we worked extremely hard to present you a magnificent experience over the next three days. I have participated various conferences and started to think that why our school doesn't organize these conferences. Since that time we have been working really hard to organize a wondrous conference. If our academic and organization team
+						hadn't worked that hard, we wouldn't have been able to fulfill our goal. Thanks to them we had the opportunity to come together in this conference and we are really proud to introduce our first but hopefully annual conference BILMUN. Over the next few days you will face various problems that our world has to overcome in our everyday lives. I recommend you to associate with your fellow delegates and try to find effective solutions by attending debates in a regardful way. I look
+						forward to meet you all and see your solution ideas related to the topics you're going to discuss in these few days.
+					</div>
+					<div class="text-center font-bold text-white text-xl mt-4">Sincerest regards, Hilal Öztürk Secretary General</div>
+				</div>
+			</div>
+			<div class="mt-6 md:mt-0 col-start-1 col-span-1 row-start-2 flex flex-col items-center justify-center gap-3">
+				<div class="font-bold text-white text-xl">Letter from Director-General</div>
+				<div class="text-white italic leading-7 2xl:leading-10 text-base 2xl:text-lg font-light">
+					<div class="text-center">Dear Participants,</div>
+					<div class="text-center">
+						First of all, I would like to welcome you all. As Director General, I am very happy and excited to see you among us. As BILMUN, we have thought of you, our valuable participants, in every step we have taken on this path we have started. Thanks to the experience of our academic team, the subject depth of our committees and the opportunities provided by BİLNET schools, we endeavour to offer you an unforgettable conference experience. We aim to contribute to your academic life, social
+						skills, problem solving and analytical thinking skills. I look forward to seeing you one-on-one. Welcome to BILMUN!
+					</div>
+					<div class="text-center font-bold text-white text-xl">Eren Özbakır, Director General</div>
+				</div>
+			</div>
+			<div class="mt-6 md:mt-0 col-start-2 col-span-1 row-start-2 flex flex-col items-center justify-center gap-3">
+				<div class="font-bold text-white text-xl">Letter from Deputy Secretary General</div>
+				<div class="text-white italic leading-7 2xl:leading-10 text-base 2xl:text-lg font-light">
+					<div class="text-center">Dear Participants,</div>
+					<div class="text-center">
+						Welcome to the BILMUN Conference! I am honored to be the Deputy Secretary General for this exciting gathering of global minds. We aim to help our distinguished delegates develop collaboration, critical thinking, and diplomatic skills. We hope to inspire actionable solutions to today's most pressing global challenges through spirited debates and collaborative problem-solving. I'm looking forward to the heated discussions and meaningful connections that will undoubtedly take place
+						during this conference. Let us seize this opportunity to make a long-lasting difference and open the way for a brighter.
+					</div>
+					<div class="text-center font-bold text-white text-xl">Best wishes, Can KASAP</div>
+				</div>
+			</div>
+			<div class="col-span-2 flex flex-row text-center items-center justify-center" id="counter">
+				<div id="counterText" class="flex flex-row w-full items-center justify-center gap-1 sm:gap-2 md:gap-4 text-white text-base mt-8 md:text-3xl md:mt-6 lg:mt-0 lg:text-4xl font-bold">
+					<div id="days">-</div>
+					days
+					<div id="hours">-</div>
+					hours
+					<div id="minutes">-</div>
+					minutes remaining
+				</div>
+			</div>
+		</main>
+
+		<footer class="w-full h-[200px] bg-main-300 flex flex-col justify-center items-center gap-3">
+			<div class="text-white text-2xl">BILMUN</div>
+			<div class="text-white text-sm pt-3 italic">Powered By Emre Özkaplan</div>
+			<a href="mailto:bilmun2024@gmail.com" class="text-white text-sm">bilmun2024@gmail.com</a>
+		</footer>
+	</body>
+</html>
